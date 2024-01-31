@@ -29,7 +29,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -52,7 +53,7 @@
                         Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end">Explore More</button>
                 </div>
 
                 <div>
@@ -145,7 +146,7 @@
         </section>
         <!-- super client section -->
         <section
-            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
             <div class="flex items-center lg:pr-28">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-white">
@@ -158,7 +159,7 @@
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable.
                     </p>
-                    <button class="btn btn-primary">Show All</button>
+                    <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end">Show All</button>
                 </div>
             </div>
 
@@ -207,9 +208,55 @@
 
     </main>
 
-    <footer>
+    <footer class="px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get strated?</span>
+                <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end">Get Started</button>
+            </p>
 
+        </div>
+        <div class="footer p-10 bg-base-200 text-base-content">
+            <nav>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <h6 class="footer-title">Newsletter</h6>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com"
+                            class="mx-4 bg-transparent border-b-2 border-black outline-none" />
+                        <button class="btn text-white rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <aside class="mt-10 text-center">
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
     </footer>
+
 
 </body>
 
